@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Chin Wags</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Message</th>
+      <th>Text</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @chin_wags.each do |chin_wag| %>
+      <tr>
+        <td><%= chin_wag.message %></td>
+        <td><%= chin_wag.text %></td>
+        <td><%= link_to 'Show', chin_wag %></td>
+        <td><%= link_to 'Edit', edit_chin_wag_path(chin_wag) %></td>
+        <td><%= link_to 'Destroy', chin_wag, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Chin Wag', new_chin_wag_path %>

@@ -1,0 +1,2 @@
+class ChinWag < ApplicationRecord
+end

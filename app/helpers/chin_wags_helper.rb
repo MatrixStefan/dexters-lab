@@ -1,0 +1,2 @@
+module ChinWagsHelper
+end

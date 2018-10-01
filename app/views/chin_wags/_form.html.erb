@@ -1,0 +1,27 @@
+<%= form_with(model: chin_wag, local: true) do |form| %>
+  <% if chin_wag.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(chin_wag.errors.count, "error") %> prohibited this chin_wag from being saved:</h2>
+
+      <ul>
+      <% chin_wag.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :message %>
+    <%= form.text_field :message %>
+  </div>
+
+  <div class="field">
+    <%= form.label :text %>
+    <%= form.text_field :text %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
