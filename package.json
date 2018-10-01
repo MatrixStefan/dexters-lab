@@ -3,6 +3,7 @@
   "private": true,
   "dependencies": {
     "async": "^2.6.1",
-    "gm": "^1.23.1"
+    "gm": "^1.23.1",
+    "smooch": "^4.14.0"
   }
 }
