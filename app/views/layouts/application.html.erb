@@ -22,7 +22,16 @@
     <%= yield %>
 
     <script>
-        Smooch.init({appId: '5bae07f960716300218f3b19'}).then(function() {
+        Smooch.init({appId: '5bae07f960716300218f3b19',
+            customText: {
+                headerText: 'ChinWag',
+                inputPlaceholder: 'Type a message...',
+                sendButtonText: 'Send'
+            }
+
+
+
+        }).then(function() {
             // Your code after init is complete
         });
     </script>
